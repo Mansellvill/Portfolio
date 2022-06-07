@@ -1,0 +1,683 @@
+
+/*--------------------------------------Страница заказов--------------------------------------------------*/
+
+.order-list-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.order-list-block-label {
+    font-size: 25px;
+    font-family: 'Segoe WP';
+    font-weight: bold;
+}
+
+.order-list-table {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.order-list-table-header,
+.order-list-table-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.order-list-table-header {    
+    height: 57px;
+    padding: 0 25px;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #d6d6d6;
+
+}
+
+.order-list-table-header span {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.order-list-table-header-label:nth-child(1) {
+    width: 7%;
+}
+
+.order-list-table-header-label:nth-child(2) {
+    width: 30%;
+}
+
+.order-list-table-header-label:nth-child(3) {
+    width: 20%;
+}
+
+.order-list-table-header-label:nth-child(4) {
+    width: 20%;
+ }
+
+.order-list-table-item {
+    min-height: 60px;
+    padding: 0 25px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.order-list-table-item:last-child {
+    border-bottom: none;
+}
+
+.order-list-table-item-number span,
+.order-list-table-item-name span,
+.order-list-table-item-price span, 
+.order-list-table-item-data span {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;  
+}
+
+
+.order-list-table-item-number {
+    width: 7%;
+}
+
+.order-list-table-item-name {
+    width: 30%;
+}
+
+.order-list-table-item-price {
+    width: 20%;
+}
+
+.order-list-table-item-data {
+    width: 20%;
+}
+
+.order-list-table-item-open {
+    display: flex;
+    justify-content: center;
+    width: 23%;
+}
+
+.order-list-table-item-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #000;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #686868;
+    border-left: 1px solid #686868;
+    box-shadow: -1px -1px #000;
+    color: #fff;
+    background: linear-gradient(to top left, #000, #414141);
+    cursor: pointer;
+}
+
+.order-list-table-item-open a {
+    width: 120px;
+    height: 40px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 17px;
+    background-color: #000;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #686868;
+    border-left: 1px solid #686868;
+    box-shadow: -1px -1px #000;
+    color: #fff;
+    background: linear-gradient(to top left, #000, #414141);
+    text-decoration: none;
+}
+
+
+.order-list-table-item-btn:focus {
+    outline: none;
+}
+
+.order-list-table-item-btn:hover {
+    background-color: #79b260;
+    background: linear-gradient(#92d774,#79b260);
+    border-top: 1px solid #92d774;
+    border-left: 1px solid #92d774;
+    box-shadow: -1px -1px #79b260;
+}
+
+/*--------------------------------------Страница заказов--------------------------------------------------*/
+
+/*--------------------------------------Страница Категориев------------------------------------------------*/
+
+.category-list-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.category-list-block-label {
+    font-size: 25px;
+    font-family: 'Segoe WP';
+    font-weight: bold;
+}
+
+.category-list-table {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.category-list-table-header,
+.category-list-table-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.category-list-table-header {    
+    height: 57px;
+    padding: 0 25px;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #d6d6d6;
+
+}
+
+.category-list-table-header span {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.category-list-table-header-label:nth-child(1) {
+    width: 6%;
+}
+
+.category-list-table-header-label:nth-child(2) {
+    width: 30%;
+}
+
+.category-list-table-header-label:nth-child(3) {
+    width: 25%;
+}
+
+
+.category-list-table-item {
+    min-height: 60px;
+    padding: 0 25px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.category-list-table-item:last-child {
+    border-bottom: none;
+}
+
+.category-list-table-item-number span,
+.category-list-table-item-name span,
+.category-list-table-item-price span, 
+.category-list-table-item-data span {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;  
+}
+
+
+.category-list-table-item-number {
+    width: 6%;
+}
+
+.category-list-table-item-code {
+    width: 25%;
+}
+
+.category-list-table-item-name {
+    width: 30%;
+}
+
+.category-list-table-item-add {
+    margin-top: 3px;
+}
+
+.category-list-table-item-btn {
+    padding: 9px;
+    margin-right: 15px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #000;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #686868;
+    border-left: 1px solid #686868;
+    box-shadow: -1px -1px #000;
+    color: #fff;
+    background: linear-gradient(to top left, #000, #414141);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.category-list-table-item-btn:focus {
+    outline: none;
+}
+
+.category-list-table-item-btn:hover {
+    background-color: #79b260;
+    background: linear-gradient(#92d774,#79b260);
+    border-top: 1px solid #92d774;
+    border-left: 1px solid #92d774;
+    box-shadow: -1px -1px #79b260;
+}
+/*--------------------------------------Страница Категориев------------------------------------------------*/
+
+/*--------------------------------------Форма добавление Категорий------------------------------------------------*/
+.category-form-box {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.category-form {
+    width: 500px;
+}
+
+.category-form-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+}
+
+.category-form-name label{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.category-form-name input {
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.category-form-btn {
+    padding: 10px;
+    margin-right: 15px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #000;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #686868;
+    border-left: 1px solid #686868;
+    box-shadow: -1px -1px #000;
+    color: #fff;
+    background: linear-gradient(to top left, #000, #414141);
+    cursor: pointer;
+}
+
+.category-form-btn:focus {
+    outline: none;
+}
+
+.category-form-btn:hover {
+    background-color: #79b260;
+    background: linear-gradient(#92d774,#79b260);
+    border-top: 1px solid #92d774;
+    border-left: 1px solid #92d774;
+    box-shadow: -1px -1px #79b260;
+}
+
+/*--------------------------------------Форма добавление Категорий------------------------------------------------*/
+
+/*--------------------------------------Открыте категории------------------------------------------------*/
+.category-cart-box {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.category-cart-main-block {
+    display: flex;
+}
+
+.category-cart-left,
+.category-cart-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-cart-left {
+    margin-right: 20px;
+}
+
+.category-cart-item {
+    padding: 5px;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 20px;
+}
+/*--------------------------------------Открыте категории------------------------------------------------*/
+
+/*--------------------------------------Продукты категории------------------------------------------------*/
+.product-list-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.product-list-block-label {
+    font-size: 25px;
+    font-family: 'Segoe WP';
+    font-weight: bold;
+}
+
+.product-list-table {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.product-list-table-header,
+.product-list-table-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-list-table-header {    
+    height: 57px;
+    padding: 0 25px;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.product-list-table-header span {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product-list-table-header-label:nth-child(1) {
+    width: 5%;
+}
+
+.product-list-table-header-label:nth-child(2) {
+    width: 15%;
+}
+
+.product-list-table-header-label:nth-child(3) {
+    width: 20%;
+}
+
+.product-list-table-header-label:nth-child(4) {
+    width: 20%;
+}
+
+.product-list-table-header-label:nth-child(5) {
+    width: 10%;
+}
+
+.product-list-table-item {
+    min-height: 60px;
+    padding: 0 25px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.product-list-table-item:last-child {
+    border-bottom: none;
+}
+
+.product-list-table-item-number span,
+.product-list-table-item-name span,
+.product-list-table-item-price span, 
+.product-list-table-item-data span {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;  
+}
+
+.product-list-table-item-number {
+    width: 5%;
+}
+
+.product-list-table-item-code {
+    width: 15%;
+}
+
+.product-list-table-item-name {
+    width: 20%;
+}
+
+.product-list-table-item-category {
+    width: 20%;
+}
+
+.product-list-table-item-price {
+    width: 10%;
+}
+
+.product-list-table-item-add {
+    margin-top: 3px;
+}
+
+.product-list-table-item-btn {
+    padding: 7px;
+    margin-right: 15px;
+    font-size: 14px;
+    background-color: #000;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #686868;
+    border-left: 1px solid #686868;
+    box-shadow: -1px -1px #000;
+    color: #fff;
+    background: linear-gradient(to top left, #000, #414141);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.product-list-table-item-btn:focus {
+    outline: none;
+}
+
+.product-list-table-item-btn:hover {
+    background-color: #79b260;
+    background: linear-gradient(#92d774,#79b260);
+    border-top: 1px solid #92d774;
+    border-left: 1px solid #92d774;
+    box-shadow: -1px -1px #79b260;
+}
+
+/*--------------------------------------Продукты Категорий------------------------------------------------*/
+/*--------------------------------------Открыте продуктов------------------------------------------------*/
+.product-cart-box {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.product-cart-main-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-cart-item-box
+{
+    display: flex;
+}
+
+.product-cart-left,
+.product-cart-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-cart-left {
+    min-width: 160px;
+    max-width: 160px;
+    margin-right: 20px;
+}
+
+.product-cart-item {
+    padding: 5px;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 20px;
+}
+
+.product-cart-item img {
+    width: 252px;
+    height: 393px;
+}
+/*--------------------------------------Открыте продуктов------------------------------------------------*/
+/*--------------------------------------Форма Товаров------------------------------------------------*/
+.product-form-box {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.product-form {
+    
+}
+
+.product-form-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+.product-form-name label{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-form-name input {
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.product-form-name select {
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.product-form-name textarea {
+    width: 900px;
+    height: 300px;
+    resize: none;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.product-form-name img {
+    width: 252px;
+    height: 393px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.product-form-btn {
+    padding: 10px;
+    margin-right: 15px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #000;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #686868;
+    border-left: 1px solid #686868;
+    box-shadow: -1px -1px #000;
+    color: #fff;
+    background: linear-gradient(to top left, #000, #414141);
+    cursor: pointer;
+}
+
+.product-form-btn:focus {
+    outline: none;
+}
+
+.product-form-btn:hover {
+    background-color: #79b260;
+    background: linear-gradient(#92d774,#79b260);
+    border-top: 1px solid #92d774;
+    border-left: 1px solid #92d774;
+    box-shadow: -1px -1px #79b260;
+}
+
+/*-------------------------------------Форма Товаров------------------------------------------------*/
+/*-------------------------------------Страница открытя заказа------------------------------------------------*/
+
+.order-info-block {
+    
+}
+
+.order-label {
+   margin-top: 20px;
+}
+
+.order-label span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-card-label{
+    margin-top: 10px;
+}
+
+.order-card-label span{
+    font-size: 18px;
+}
+
+.profil-edit {
+    margin-top: 20px;
+}
+
+
+.profil-edit-btn {
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 17px;
+    background-color: #000;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #686868;
+    border-left: 1px solid #686868;
+    box-shadow: -1px -1px #000;
+    color: #fff;
+    background: linear-gradient(to top left, #000, #414141);
+    text-decoration: none;
+}
+
+.profil-edit-btn:focus {
+    outline: none;
+}
+
+.profil-edit-btn:hover {
+    background-color: #79b260;
+    background: linear-gradient(#92d774,#79b260);
+    border-top: 1px solid #92d774;
+    border-left: 1px solid #92d774;
+    box-shadow: -1px -1px #79b260;
+}
+/*-------------------------------------Страница открытя заказа------------------------------------------------*/
