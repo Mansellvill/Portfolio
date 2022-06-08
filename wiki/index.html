@@ -1,0 +1,104 @@
+<?php
+require("connect_db.php");
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Википедния</title>
+	<link rel = "stylesheet" href = "style.css" type="text/css" media="all">
+</head>
+<body>
+	<div id = "container">
+	<div id = "logo">Википедния</div>
+	<div id = "header">
+		<ul>			
+			<?php if(isset( $_SESSION['log_user'])):?>
+			<li><a href="logout.php">Выйти</a></li>
+			<li>Вы вошли на сайт, как: <?php echo $_SESSION['log_user']['login']; ?> </li>
+			<?php else:?>
+			<li><a href="login.php">Вход</a></li>
+			<li><a href="signup.php">Регистрация</a></li>
+			<li>Вы вошли на сайт, как гость.</li>
+			<?php endif;?>
+		</ul>
+	</div>
+	<div id = "header-menu">
+		<ul>
+			<li><form method = "GET" action = "search.php">		
+			<input type="search" name="text_search">
+			<input type="submit" name = "button_search" value="Искать">
+			</form></li>
+			<li>Поиск:</li>
+			
+		</ul>
+	</div>
+	<div id="clear"></div>
+	<div id = "menu-main">
+		<ul>
+			<li><a href="index.php">Главная</a></li>
+			<li><a href="all_pages.php">Марки автомобилей</a></li>
+			<li><a href="create_update.php">Создать</a></li>
+		</ul>
+	</div>
+	
+	<div id = "content">
+		<h1>Страница пользователя: Mansell</h1>
+		<div id = "profil">			
+			<div id = "profil_avatar">
+				<center><h2>Аватар</h2>(200x200 px)</center>
+				<img src = "images/user_default.png">
+				<form action = "loading.php" method = "POST" enctype = 'multipart/form-data'>
+					<input id = "file" type = "file" name = "somename" />
+					<input id = "file" type = "submit" value = "Загрузить" />
+				</form>
+			</div>
+			<div id = "profil_info">
+			<h2>Информация</h2>
+			<br>
+			<h3>Группа: Редакторы</h3>		
+			<br>
+			<h3>Страниц создано: 5</h3>			
+			<br>
+			<h3>Заметки: </h3>
+			<form action = "loading.php" method = "POST" enctype = 'multipart/form-data'>
+					 <textarea placeholder="Ваши заметки" name = "zametki"></textarea>
+					 <input type = "submit" value = "Сохранить" />
+			</form>
+			</div>
+		</div>
+		
+		<div id = "profil_pages">
+			<h1>Ваши страницы</h1>
+			<div id = "profil_page">
+				
+				<img src = "images/default.png">	
+				
+				<div id = "profil_page_name">
+					<a href = "#"><h2>Nissan GTR</h2></a>
+				</div>
+				<div id = "profil_page_update_delite">
+					<a href = "#"><h2>Редакировать</h2></a>
+				</div>
+				<div id = "profil_page_update_delite">
+					<a href = "#"><h2>Удалить</h2></a>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		
+	</div>
+		
+	
+		
+	<div id = "footer">
+	Copyright
+	</div>
+	</div>
+</body>
+</html>

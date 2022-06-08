@@ -1,0 +1,571 @@
+*{
+	padding: 0;
+	margin: 0;	
+	text-decoration: none;	
+	/*font-size: 16px;*/
+	/*font-family: Times New Roman;*/
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+
+body{
+	text-decoration: none;
+	
+}
+
+#container{
+	max-width: 1100px;	
+	min-width: 1000px;	
+	margin: auto;
+	padding: 0.5%;
+	min-height: 700px;
+	border: 1px solid black;
+}
+
+/*----------------------------- Заголовок -----------------------------*/
+#logo{
+
+	min-width: 32%;
+	height: 63px;
+	float: left;
+	text-align: center	;
+	line-height: 50px;
+	font-size: 40px;
+	background-color: #f4f4f4;
+}
+
+#logo a{
+	text-decoration: none;
+	color: black;
+}
+
+#header{	
+	width: 66%;		
+	float: right;
+	padding: 0.5%;
+	background-color: #f4f4f4;
+	font-size: 16px;
+	font-family: Times New Roman;
+}
+#header ul{
+	list-style: none;
+	margin-right:10px;
+}
+
+#header li{
+	margin: 0px;
+	margin-left: 1%;
+	padding: 0px;	
+	float: right;
+
+}
+/*----------------------------- Вверхнее правое меню -----------------------------*/
+#header-menu{
+	
+	width: 66%;
+	float: right;	
+	padding: 0.5%;	
+	border-top: 5px solid white;
+	background-color: #f4f4f4;	
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-family: Times New Roman;
+}
+
+#header-menu ul{
+	
+	list-style: none;
+	margin-right:10px;
+}
+
+#header-menu li{
+	margin: 0px;
+	margin-left: 1%;
+	padding: 0px;
+	float: right;
+	
+}
+
+#clear{
+	width: 100%;
+	float: left;	
+}
+
+
+/*----------------------------- Главное меню -----------------------------*/
+#menu-main{	
+	clear: left;
+	width: 19%;
+	min-height: 600px;
+
+	float: left;
+	
+	display: flex;
+	
+
+}
+#menu-main ul{
+	list-style: none;
+}
+
+#menu-main li{
+	margin: 0px;
+	padding: 0px;
+	height: 35px;
+		
+}
+#menu-main a{
+	position: relative;
+	display: block;
+	padding: 5px;
+	height: 35px;
+	line-height: 25px;
+}
+#menu-main a:hover  {
+	color: red;
+	text-decoration: underline;
+}
+
+
+
+/*----------------------------- Контент -----------------------------*/
+#content{
+	float: right;
+	width: 78%;
+	min-height: 600px;
+	padding: 1%;
+	text-decoration: none;
+	border: 5px solid #f4f4f4;
+	margin: 0 0 10px 0;
+}
+#content li {
+	list-style: none;
+}
+/*----------------------------- Контент главной страницы -----------------------------*/
+/*----------------------------- Заголовок -----------------------------*/
+#main_content{	
+	width: 100%;
+	height: 100px;
+	background-color: #f4f4f4;
+}
+
+#main_img{
+	width: 200px;
+	height: 100px;
+	background: url(images/main_img.png) no-repeat;
+	float:left;
+	
+}
+#main_title{
+	width: 100%;
+	height: 100px;	
+	text-align: center;
+
+}
+
+/*----------------------------- Список новейших страниц -----------------------------*/
+#last_pages{
+	margin-top: 1%;
+	float: left;
+	min-width: 35%;
+	min-height: 600px;
+	padding: 1%;	
+	background-color: #f4f4f4;
+}
+#list_last_pages{
+	margin-top: 3%;
+	width: 98%;
+	height: 100px;	
+	padding: 1%;
+	background-color: black;	
+}
+#list_last_pages:first-child{	
+	width: 98%;
+	height: 100px;	
+	padding: 1%;
+	background-color: black;
+}
+#list_last_pages a{
+	display: block;
+		color: black;
+}
+#list_last_pages a:hover{
+	background-color: #f4f4f4;
+	text-shadow: black  0 0 2px;
+	color: #ffffff;
+	text-decoration: none;
+	
+}
+#list_last_pages img{
+	width:100px;
+	height: 100px;
+}
+#img_list_last_pages{
+	width: 100px;
+	height: 100px;
+	float: left;	
+}
+
+#text_list_last_pages{
+	
+	width: 100%;
+	height: 100px;	
+	text-align: center;
+	line-height: 100px;
+	background-color: #f4f4f4;
+}
+/*----------------------------- Случайная страница -----------------------------*/
+#random_pages{
+	padding: 1%;
+	margin-top: 1%;
+	float: right;
+	max-width: 60%;
+	min-width: 60%;	
+	min-height: 600px;
+	background-color: #f4f4f4;
+
+	
+}
+#content_random_pages{
+	margin-top: 1%;	
+	width: 98%;
+	min-height: 520px;
+	padding: 1%;
+	
+}
+#content_random_pages img{
+	margin: 1%;
+	max-width:220px;
+	max-height: 200px;
+	clear: right;
+	float:right;
+}
+
+#pereity_random_pages{
+	width: 98%;
+	height: 20px;
+	text-align:right;
+	padding: 1%;
+}
+/*----------------------------- Страница профеля пользователя -----------------------------*/
+
+#profil{
+	margin: 1% 0 0 0 ;
+	width: 98%;
+	height: 316px;
+	padding: 1%;
+	background-color: #f4f4f4;
+}
+
+#profil_avatar{
+	vertical-align: top;
+	padding: 5px;
+	width: 200px;
+	height: 305px;	
+	border: 1px solid black;	
+	display: inline-block;	
+}
+
+#profil_avatar img{
+	margin: 5px 0 0 0;
+	width: 200px;
+	height: 200px;
+	
+}
+#file{
+	margin:5px 0 0 0;
+	width: 200px;
+}
+
+#profil_info{
+	vertical-align: top;
+	padding: 5px;
+	margin: 0 0 0 10px;
+	width: 602px;
+	height: 305px;	
+	border: 1px solid black;
+	display: inline-block;	
+}
+
+#profil_info textarea{
+	margin: 5px 0;
+	width: 600px;
+	height: 120px
+}
+#profil_info input {
+	width: 600px;
+	height: 20px
+}
+
+#profil_pages{
+	margin: 10px 0 0 0;
+	width: 98%;
+	min-height: 490px;
+	background: #f4f4f4;
+	padding: 1%;
+}
+#profil_page{
+	margin: 1%;
+	padding: 1%;
+	width: 96%;
+	height: 50px;	
+	border: 1px solid black;
+}
+
+
+#profil_page img{
+	width: 50px;
+	height: 50px;
+	vertical-align: top;
+	display: inline-block;
+
+}
+#profil_page_name{
+	width: 300px;
+	height: 50px;
+	vertical-align: top;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+}
+#profil_page_update_delite{	
+	margin: 0 0 0 1%;
+	width: 210px;
+	height: 50px;
+	vertical-align: top;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+}
+#profil_page_name a{
+	text-decoration: none;
+	color: black;
+}
+#profil_page_update_delite a{
+	text-decoration: none;
+	color: black;
+}
+#profil_page:hover{
+	text-decoration: none;
+	background: white;	
+}
+#profil_page_name:hover{
+	background: #f4f4f4;
+}
+#profil_page_update_delite:hover{
+	background: #f4f4f4;
+}
+/*----------------------------- Марки автомобилей -----------------------------*/
+
+#brand{
+	min-width: 24.5%;
+	height: 250px;
+	display: inline-block;
+	position: relative;
+	
+}
+
+#brand_content{
+	
+	position: absolute;
+	text-align: center;
+	padding: 10px 0 0 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#brand_content img{
+	width: 200px;
+	height: 200px;
+}
+
+#brand:hover{		
+	background-color: #f4f4f4;
+	text-shadow: black  0 0 2px;
+	color: #ffffff;
+}
+#brand a:hover{
+	height:100%;
+	display:block;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*----------------------------- Модели автомобилей -----------------------------*/
+
+#model{
+	width: 23.48% /*200px*/ ;	
+	padding: 5px 5px;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+#model a{
+	display: block;
+	height: 100%;
+}
+#model_content_img{
+		
+	height: 200px;
+	
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+#model_content img{
+	width: 200px;
+	height: 200px;
+}
+#model_content_header{
+	text-align: center;
+	margin: 5px 0 0 0;
+	padding: 5px ;
+	height: 30px;
+}
+#model_content_text{
+	text-align: left;
+	margin: 5px 0 0 0;
+	padding: 5px ;
+	height: 70px;	
+}
+
+
+
+#model:hover{		
+	background-color: #f4f4f4;
+	text-shadow: black  0 0 2px;
+	color: #ffffff;
+	
+}
+#model a:hover{
+	/*height:100%;*/
+	display:block;
+	color: #ffffff;
+	text-decoration: none;	
+}
+
+
+/*----------------------------- Характеристики машины -----------------------------*/
+#table_content{
+	
+	float: right;
+	width: 35%;	
+	border: 1px solid black;
+	margin: 0% 1% 1% 1%;
+}
+#table_content table{
+	border-collapse: collapse;
+}
+
+#table_content th {
+	padding: 2px;
+	border:  1px solid black;
+	border-collapse: separate;
+	text-align: left;
+	background: #f4f4f4;
+}
+
+#table_content td{
+	padding: 2px;
+	border:  1px solid black;
+	border-collapse: separate;
+	text-align: center;
+}
+
+#table_content thead th{
+	text-align: center;	
+}
+
+
+/*----------------------------- Форма для создания и редоктирования страниц -----------------------------*/
+#create_update{
+	display: block;
+}
+
+#title {
+	margin: 10px 0;
+	float: left;							
+	clear: left;
+}
+#input-title{
+	float: left;
+	width: 95%;
+	clear: left;
+	height: 25px;
+	font-size: 110%;
+}
+
+#CKEDITOR{
+	float: left;
+	clear: left;
+	width: 95%;
+}
+
+#button-save{
+	float: left;
+	margin: 10px 0;
+	clear: left;
+	width: 30%;
+	height: 40px;
+}
+
+/*----------------------------- Форма для заполение и редактирование табличных данных -----------------------------*/
+
+#form_zap fieldset{
+	width: 46%; 
+	border: 1px solid #dcdcdc; 
+	border-radius : 10px; 
+	padding: 15px; 
+	margin: 5px 0px;
+
+	
+	display: inline-block;
+	position: relative;
+
+}
+#form_zap legend{ 
+	background-color : #efefef; 
+	border : 1px solid #dcdcdc ; 
+	border-radius :10px ; 
+	padding : 5px 15px; 
+	text-align : left ; 
+
+}
+
+#form_zap td{
+	padding: 2px;
+	
+}
+#form_zap th{
+	padding: 2px;
+	text-align: right;
+}
+#selection {
+	width: 204px;
+}
+#form_zap fieldset input{
+	width: 200px;
+}
+
+/*----------------------------- Подвал -----------------------------*/
+#footer{
+	margin: 1% 0 0 0;
+	clear: both;
+	width:98%;
+	padding: 1%;
+	text-align: center;		
+	background: #f4f4f4;
+}
+
