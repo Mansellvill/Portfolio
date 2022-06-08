@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/ProximaNova/stylesheet.css">
+</head>
+
+<body>
+    <!--Pop-up menu-->
+    <div class="popup" id="main_popup">
+        <form action="" method="POST">
+            <div class="popup-content grid">
+                <div class="popup_add_title_book">ADD A BOOK</div>
+                <div class="popup_title_paragraph">Picture book:</div>
+                <div class="popup_img_add_input">
+                    <input type="file" id="popup_img_book_input" name="popup_img_book_input">
+                </div>
+                <div class="popup_title_paragraph">Name Book:</div>
+                <div class="popup_name_add_input">
+                    <input type="text" id="popup_name_book_input" name="popup_name_book_input" placeholder="Enter Book Name">
+                </div>
+
+                <div class="popup_title_paragraph">Name Author:</div>
+                <div class="popup_author_add_input">
+                    <input type="text" id="popup_name_author_input" name="popup_name_author_input" placeholder="Enter the Author of the Book">
+                </div>
+
+                <div class="popup_title_paragraph">Book Rating:</div>
+                <div class="popup_rating_add_input">
+                    <div class="book_rating_wrap grid">
+                        <input class="book_rating_input" id="star-rating-5" type="radio" name="rating" value="5">
+                        <label class="book_rating_ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+                        <input class="book_rating_input" id="star-rating-4" type="radio" name="rating" value="4">
+                        <label class="book_rating_ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+                        <input class="book_rating_input" id="star-rating-3" type="radio" name="rating" value="3">
+                        <label class="book_rating_ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+                        <input class="book_rating_input" id="star-rating-2" type="radio" name="rating" value="2">
+                        <label class="book_rating_ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+                        <input class="book_rating_input" id="star-rating-1" type="radio" name="rating" value="1"  >
+                        <label class="book_rating_ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                    </div>
+                </div>
+                <div class="popup_add_book">
+                    <button class="button_add_a_book" id="popup_add" type="submit">ADD A BOOK</button>
+                    <button class="button_add_a_book" id="popup_cansel" onclick="event.preventDefault()">CANSEL</button>
+                    <script>
+                        function handler() {
+                            document.getElementById('main_popup').classList.toggle('show');
+                        }
+
+                        popup_cansel.addEventListener("click", handler);
+
+                    </script>
+
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+
+    <!--Header-->
+    <header class="header grid">
+        <div class="header-left"></div>
+        <div class="header-right grid">
+            <span class="help_henter_header text-header">
+                <a href="#">Help Center</a>
+            </span>
+            <span class="circle_header">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+            </span>
+            <span class="our_support_header text-header">
+                <a href="#">Our Support</a>
+            </span>
+            <div class="user grid">
+                <div class="avatar_wrap_user"></div>
+                <span class="name_user">John Doe</span>
+                <span class="menu_user">
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!--Menu-->
+    <section class="main grid">
+        <nav class="nav grid">
+            <div class="add_a_book_panel">
+                <button class="button_add_a_book" onclick="document.getElementById('main_popup').classList.toggle('show');">
+                    <span class="icon_button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </span>
+                    <span class="text_button">ADD A BOOK</span>
+                </button>
+            </div>
+            <div class="nav_main">
+                <ul>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span>
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu">Now Reading</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu"></span>Browse</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu"></span>Buy Books</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu"></span>Favourite Books</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span>
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu"></span>Wishlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu"></span>History</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="personal_categories">
+                <ul>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span class="circle_red_personal_categories">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu">Must Read Titles</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span class="circle_yellov_personal_categories">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu">Best Of List</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span class="circle_blue_personal_categories">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu">Classic Novels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link_nav_menu" href="">
+                            <span class="circle_purple_personal_categories">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            <span class="text_nav_menu">Non Fiction</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="history_list grid">
+                <div class="history_list_items grid">
+                    <span class="icons_history_list">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="info_historty list">You added
+                        <span class="name_book_history_list text_history_list">The Trial</span> by
+                        <span class="author_book_history_list text_history_list">Franz Kafka</span> to your
+                        <span class="category_history_list text_history_list">Must Read Titles</span>.</span>
+                    <span class="date_history_list">48 minutes ago</span>
+                </div>
+                <div class="history_list_items grid">
+                    <span class="icons_history_list">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="info_historty list">You added
+                        <span class="name_book_history_list text_history_list">The Trial</span> by
+                        <span class="author_book_history_list text_history_list">Franz Kafka</span> to your
+                        <span class="category_history_list text_history_list">Must Read Titles</span>.</span>
+                    <span class="date_history_list">48 minutes ago</span>
+                </div>
+                <div class="history_list_items grid">
+                    <span class="icons_history_list">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="info_historty list">You added
+                        <span class="name_book_history_list text_history_list">The Trial</span> by
+                        <span class="author_book_history_list text_history_list">Franz Kafka</span> to your
+                        <span class="category_history_list text_history_list">Must Read Titles</span>.</span>
+                    <span class="date_history_list">48 minutes ago</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Content -->
+        <main class="main_content grid">
+            <div class="header_main_content grid">
+                <h1>Browse Available Books</h1>
+            </div>
+            <div class="menu_main_content grid">
+                <div class="nav_menu_main_content grid">
+                    <div class="element_nav_menu_main_content">
+                        <a id="all_books">All Books</a>
+
+                    </div>
+
+                    <div class="element_nav_menu_main_content">
+                        <a href="">Most Recent</a>
+                    </div>
+                    <div class="element_nav_menu_main_content">
+                        <a id="most_popular">Most Popular</a>
+
+                    </div>
+
+                    <div class="element_nav_menu_main_content">
+                        <a href="">Free Books</a>
+                    </div>
+                </div>
+                <div class="search_main_content grid">
+                    <div class="div_search_main_content">
+                        <form action="">
+                            <input type="search" id="search_input" name="search" oninput="searchBook()" placeholder="Enter Keywords">
+                            <button class="search_button" id="search_button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--BOOKS-->
+            <div class="books grid" id="books"></div>
+
+        </main>
+    </section>
+    <!--Footer-->
+    <footer class="footer grid">
+        <div class="footer-left"></div>
+        <div class="footer-right grid">
+            <div class="help">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </div>
+            <div class="settings">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+    <script defer src="JS/showbooks.js"></script>
+</body>
+
+</html>
