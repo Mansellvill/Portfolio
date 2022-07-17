@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kanban Board</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main" id="mains">
+            <header class="header grid">
+                <div class="name_board">
+                    <a href="#" id="button_rename">
+                        Board name
+                    </a>
+                </div>
+                <div class="menu">
+                    <label for="nav-toggle" class="nav-toggle" onclick>Show Menu</label>
+                </div>
+            </header>
+
+            <main class="board flex" id="main">
+                <!--Add button-->
+                <div class="board_lists" id="add_button">
+                    <div class="add_list grid">
+                        <span class="add_list_title" id="button_add_list">
+                            Add...
+                        </span>
+
+                        <form method="POST" action="/addList" class="add_list_form grid" id="window_add_list">
+                            <div class="add_list_input_name">
+                                <input type="text" name="name_list" id="name_list" class="add_list_input" placeholder="New list...">
+                            </div>
+
+                            <div class="save_cansel grid">
+                                <button class="button" id="button_save_list">Save</button>
+                                <a href="#" class="add_list_cansel fa fa-times" id="cansell_add_list"></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!--Window Rename-->
+        <div class="pop_rename" id="pop_rename">
+            <div class="pop_rename_title grid">
+                <div class="title_name">
+                    <span>Rename Board</span>
+                </div>
+                <a href="#" class="title_close_button fa fa-times" id="button_close_rename"></a>
+            </div>
+
+            <form action="/rename" method="POST" class="pop_rename_form grid">
+                <div class="pop_rename_name">
+                    <div class="pop_rename_label">
+                        <label for="" class="label_rename">Name</label>
+                    </div>
+                    <div class="pop_rename_input">
+                        <input type="text" class="input_rename" name="rename_board" id="rename_board">
+                    </div>
+                </div>
+                <div class="pop_rename_button">
+                    <button id="pop_rename_button" class="button">Rename</button>
+                </div>
+            </form>
+        </div>
+
+
+        <input type="checkbox" id="nav-toggle" hidden>
+        <div class="board_menu" id="board_menu">
+            <div class="board_menu_container">
+                <div class="board_menu_main">
+                    <div class="board_menu_header">
+                        <div class="board_menu_header_content grid">
+                            <h3 class="board_menu_header_title">Menu</h3>
+                            <a href="#" class="board_menu_header_close fa fa-times" id="task_copy_close"></a>
+                        </div>
+                    </div>
+                    <div class="board_menu_content">
+                        <div class="board_menu_content_main">
+                            <span class="board_menu_actions fa fa-list-ul">&nbsp Activity</span>
+                            <div class="menu_action_list" id="action_list">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="/JS/loadBoard.js"></script>
+                <script src="/JS/openClose.js"></script>
+                <script src="/JS/loadList.js"></script>
+            </div>
+</body>
+
+</html>

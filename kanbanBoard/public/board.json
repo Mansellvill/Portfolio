@@ -1,0 +1,91 @@
+{
+  "boardID": 1,
+  "boardName": "New Board",
+  "boardUser": "Vladimir",
+  "listsOfBoard": [
+    {
+      "listName": "Backlog",
+      "listCards": [
+        {
+          "cardText": "Task1",
+          "cardDescription": ""
+        },
+        {
+          "cardText": "Task2",
+          "cardDescription": "New Task"
+        }
+      ]
+    },
+    {
+      "listName": "In progress",
+      "listCards": [
+        {
+          "cardText": "Task1",
+          "cardDescription": ""
+        }
+      ]
+    },
+    {
+      "listName": "Done",
+      "listCards": []
+    }
+  ],
+  "boardActivityList": [
+    {
+      "action": "Vladimir added a new card to Task3 in Backlog.",
+      "time": "Added by 2018-3-13 00:46:42"
+    },
+    {
+      "action": "Vladimir moved the Task3 from Backlog to In progress.",
+      "time": "Added by 2018-3-13 00:46:58"
+    },
+    {
+      "action": "Vladimir removed the Task3 in the In progress.",
+      "time": "Added by 2018-3-13 00:47:13"
+    },
+    {
+      "action": "Vladimir copied Task1 from Task1New in list Backlog.",
+      "time": "Added by 2018-3-13 00:47:44"
+    },
+    {
+      "action": "Vladimir moved the Task1New from Backlog to In progress.",
+      "time": "Added by 2018-3-13 00:49:37"
+    },
+    {
+      "action": "Vladimir removed the Task1New in the In progress.",
+      "time": "Added by 2018-3-13 00:50:07"
+    },
+    {
+      "action": "Vladimir moved the list Done.",
+      "time": "Added by 2018-3-13 00:50:17"
+    },
+    {
+      "action": "Vladimir moved the list Done.",
+      "time": "Added by 2018-3-13 00:50:31"
+    },
+    {
+      "action": "Vladimir added a new list New List.",
+      "time": "Added by 2018-3-13 00:50:40"
+    },
+    {
+      "action": "Vladimir copied New List with a new name New List1.",
+      "time": "Added by 2018-3-13 00:50:53"
+    },
+    {
+      "action": "Vladimir removed the list New List1.",
+      "time": "Added by 2018-3-13 00:51:44"
+    },
+    {
+      "action": "Vladimir renamed the board with Board in the Board.",
+      "time": "Added by 2018-3-13 00:52:01"
+    },
+    {
+      "action": "Vladimir renamed the board with New Board in the New Board.",
+      "time": "Added by 2018-3-13 00:52:24"
+    },
+    {
+      "action": "Vladimir removed the list New List.",
+      "time": "Added by 2018-3-13 00:52:46"
+    }
+  ]
+}
